@@ -1,5 +1,5 @@
 # Web-labs
-https://vartan14.github.io/Web-labs
+
 
 lab1
 https://vartan14.github.io/Web-labs/lab1/index.html
