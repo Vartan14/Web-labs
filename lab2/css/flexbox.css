@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 52px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+.flex__container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    background: rgb(245, 67, 3);
+    flex:1;
+    display: flex;
+}
+
+.item__1345{
+    flex: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: rgb(15, 157, 218);
+    min-height: 162.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+.header__title{
+    margin-left: 20px;
+    flex: 4;
+}
+
+.header__quote{
+    text-align: center;
+    font-size: 16px;
+    flex: 1;
+}
+
+.quote__text{
+    margin-bottom: 20px;
+}
+
+.item__345{
+    flex:1;
+    display: flex;
+}
+
+nav{
+    background-color: rgb(244, 181, 157);
+    flex: 33.33%;
+    padding: 30px;
+}
+
+.nav__title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ 
+.nav__list{
+     font-size: 24px;
+     margin-left:15%;
+ }
+ 
+.nav__list li{
+     padding-bottom: 5px;
+ }
+ 
+.nav__list a{
+     text-decoration: none;
+     color: black;
+     transition: all 0.15s;
+ }
+ 
+ a:hover
+ {
+     opacity: 0.3;
+ }
+
+.main{
+    flex: 66.66%;
+    display: flex;
+    flex-direction: column;
+}
+
+.item__4{
+    background: white;
+    height: 36px;
+    text-align: center;
+}
+.item__5{
+    background-color: rgb(137, 134, 137);
+    flex:1;
+    display: flex;
+}
+
+.landscape{
+    flex: 50%;
+}
+
+.picture__container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item__5 p{
+    font-size: 20px;
+    margin: 5%;
+    text-align: center;
+    color: white;
+}
+
+
+aside{
+    background-color: lightgreen;
+    flex: 25%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.item__2_1 p{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.item__2_2 ol{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+footer{
+    background-color: rgb(15, 157, 218);
+    flex: 165px;
+    min-height: 162.5px;
+    padding: 0px 30px 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.footer__text{
+    padding: 20px;
+    font-size: 14px;
+    flex: 75%;
+    display: flex;
+    column-gap: 250px;
+
+}
+
+.footer__title{
+    flex: 25%;
+    
+}
+
+.footer__title h2{
+    padding-left: 70px;
+    font-size: 52px;
+}
+
+
+.footer__col_head{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color:black;   
+    flex: 33.33%
+}
+
+footer li{
+    margin-bottom: 7px;
+    list-style-type: circle;
+    color:black;   
+}
+
+
