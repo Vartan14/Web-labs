@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* html, body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+} */
+
+input, textarea, button{
+    font-family: inherit;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: inherit; font-weight: 400;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+a:hover
+{text-decoration:
+     none;
+}
+
+
+
+
+
+
+.wrapper {
+    background: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+header {
+    background: white;
+    width: 100%;
+    height: 80px;
+    position: relative;
+    
+}
+
+
+
+.header__body{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.header__burger{
+    display: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.nav-about{
+    color:#478AC9
+}
+
+nav a {
+    color: #111111;
+    transition: 0.2s;
+}
+
+.nav-home:hover, .nav-contact:hover {
+    color: rgb(222, 4, 4);
+}
+
+.header-logo{
+    width: 64px;
+    height: 32px;
+}
+
+.header-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    height: 1000px;
+    position: relative;
+}
+
+.people-img{
+    position: absolute;
+    width: 638px;
+    height: 457px;
+    z-index: 1;
+    top: 90px;
+    left: 33.33%;
+    /* right: 370px; */
+}
+
+
+.people-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.woman-img{
+    position: absolute;
+    width: 430px;
+    height: 600px;
+    z-index: 2;
+    top: 325px;
+    left: 13%;
+}   
+
+.woman-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card{
+    position: absolute;
+    width: 500px;
+    height: 450px;
+    background: #478AC9;
+    z-index: 3;
+    top: 400px;
+    left:55%;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card p{
+    font-family: 'Open Sans' sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 30px;
+}
+
+.card button{
+    padding: 10px 30px;
+    color: white;
+    background: #478AC9;
+    border: 2px solid white; 
+    font-size: 16px;
+    width: 140px;
+    margin-top: 80px;
+    
+}
+
+.card button:hover {
+    color: black;
+    background: white;
+    border: 2px solid #478AC9; 
+}
+
+
+.main-div-1{
+    background: #E0E5EB;
+    height: 600px;
+    
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+}
+
+.people-img, .woman-img, .card {
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+
+footer {
+    background: #333333;
+    height: 120px;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: white;
+    width: 400px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+@media (max-width: 1200px) {
+
+    .people-img{
+        left: 22% !important;
+    }
+
+    .woman-img{
+        left:4% !important;
+    }
+
+    .card{
+        left: 50% !important;
+    }
+}
+
+@media (max-width: 1050px) {
+    .woman-img{
+        top: 450px !important;
+        left:13% !important;
+    }
+
+    .woman-img{
+        left:10% !important;
+    }
+
+    .card{
+        left: 33% !important;
+        top: 900px !important;
+    }
+
+    main{
+        height: 1400px !important;
+    }
+
+
+    
+}
+
+@media (max-width: 900px){
+    .people-img{
+        left: 13% !important;
+    }
+
+    .woman-img{
+        left:7% !important;
+    }
+
+    .card{
+        left: 30% !important;
+    }
+
+}
+
+@media (max-width: 767px){
+    .people-img{
+        width: 470px !important;
+        height: 338px !important;
+        left: 18% !important;
+    }
+
+    .woman-img{
+        width: 320px !important;
+        height: 445px !important;
+        top: 340px !important;
+        left: 12% !important; 
+    }
+
+    .card{
+        width: 370px !important;
+        height: auto !important;
+        top: 700px !important;
+        left: 28% !important;
+    }
+
+    main{
+        height: 1250px !important;
+    }
+
+    .header{
+        height: 60px !important;
+        
+    }
+
+    .header__body{
+        height: 60px !important;
+    }
+
+
+    .header__burger{
+        display: block !important;
+        position: relative !important;
+        width: 30px !important;
+        height: 20px !important;
+        z-index: 6;
+    }
+
+    nav{
+        display: none;
+        /* position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: #E0E5EB !important;
+        background-color: #fff !important;
+        padding: 0px 0 0 0 !important;
+        z-index: 4;
+        flex-direction: column !important;
+        padding-top: 60px !important; */
+    }
+
+    nav a{
+        text-align: center;
+        margin: 10px 0 20px 0;
+    }
+
+    .header__burger span{
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 16px;
+    }
+
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .header__burger::before{
+        top:0;
+    }
+
+    .header__burger::after{
+       top: 8px;
+    }
+}
+
+@media (max-width: 635px){
+    .people-img{       
+        left: 14% !important;
+    }
+
+    .woman-img{        
+        left: 8% !important; 
+    }
+
+    .card{
+        left: 24% !important;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .people-img{
+        width: 380px !important;
+        height: 273px !important;
+        left: 15% !important;
+        top: 70px !important;
+    }
+
+    .woman-img{
+        width: 260px !important;
+        height: 360px !important;
+        top: 340px !important;
+        left: 9% !important;
+        top: 270px !important;
+    }
+
+    .card{
+        width: 320px !important;
+        height: auto !important;
+        top: 540px !important;
+        left:25% !important;
+    }
+
+    .card h2{
+        font-size: 40px !important;
+    }
+}
+
+@media (max-width:460px) {
+    .people-img{
+        width: 280px !important;
+        height: 200px !important;
+        left: 17% !important;
+    }
+
+    .woman-img{
+        width: 190px !important;
+        height: 265px !important;
+        top: 220px !important;
+        left: 11% !important;
+    }
+
+    .card{
+        width: 230px !important;
+        height: auto !important;
+        top: 400px !important;
+        left: 27% !important;
+        padding: 20px 15px !important;
+    }
+
+    .card h2{
+        font-size: 30px !important;
+    }
+
+    .card p{
+        font-size: 14px !important;
+        line-height: 25px;
+    }
+
+    .card button{
+        margin-top: 30px !important; 
+    }
+
+    main{
+        height: 900px !important;
+    }
+
+    footer p{
+        font-size: 10px !important;
+        width: 300px !important;
+    }
+
+    .header__body{
+        padding: 0 10px !important;
+    }
+}
+
+@media (max-width:370px) {
+    .people-img{
+        width: 220px !important;
+        height: 160px !important;
+        left: 18% !important;
+    }
+
+    .woman-img{
+        width: 150px !important;
+        height: 210px !important;
+        top: 220px !important;
+        left: 12% !important;
+    }
+
+    .card{
+        width: 180px !important;
+        height: auto !important;
+        top: 380px !important;
+        left: 28% !important;
+        padding: 20px 15px !important;
+    }
+
+    .card h2{
+        font-size: 20px !important;
+    }
+
+    .card p{
+        font-size: 10px;
+        line-height: 20px !important;
+    }
+}
