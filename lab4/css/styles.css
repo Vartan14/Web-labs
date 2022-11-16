@@ -264,7 +264,7 @@ footer p{
 
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .people-img{
         width: 470px !important;
         height: 338px !important;
