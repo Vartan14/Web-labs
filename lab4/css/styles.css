@@ -5,11 +5,6 @@
     box-sizing: border-box;
 }
 
-/* html, body{
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-} */
 
 input, textarea, button{
     font-family: inherit;
@@ -27,11 +22,6 @@ a:hover
 {text-decoration:
      none;
 }
-
-
-
-
-
 
 .wrapper {
     background: white;
@@ -52,8 +42,6 @@ header {
     position: relative;
     
 }
-
-
 
 .header__body{
     height: 80px;
